@@ -1,0 +1,105 @@
+body{
+    background-color: black;
+}
+
+.title{
+    color: white;
+    font-family: fantasy;
+    font-size: xx-large;
+    position: relative;
+    left: 37%;
+    top: 5px;
+    text-decoration:underline;
+}
+
+.block{
+    background-color: rgb(244, 244, 244);
+    width: 70%;
+    margin: 100px auto;
+    display: flex;
+    padding: 5px;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+  }
+  
+  .image {
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(214, 75, 211);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    font-size: larger;
+    font-family:cursive;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  a{
+    color: rgb(255, 255, 255); 
+    background-color: transparent; 
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+
+  @media screen and (max-width: 1200px){
+
+    .image {
+      display: block;
+      width: 120px;
+    }
+
+    .overlay {
+      width: 120px;
+    }
+
+    .title{
+      position: relative;
+      left: 25%; 
+  }
+  }
+
+  @media screen and (max-width: 600px){
+    .image {
+      display: block;
+      width: 70px;
+    }
+
+    .overlay {
+      width: 70px;
+    }
+
+    .title{
+      position: relative;
+      left: 15%; 
+  }
+  }
